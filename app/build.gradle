@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.targetSdk
+    buildToolsVersion "$versions.buildTools"
+
+    defaultConfig {
+        applicationId "fsk.com.flowbindings.app"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+    implementation "androidx.core:core-ktx:$versions.androidX.coreKtx"
+
+    //Navigation
+    def navVersion = "2.3.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
+
+    //ui
+    implementation "androidx.appcompat:appcompat:$versions.androidX.appCompat"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$versions.androidX.lifecycleKtx"
+
+    //co-routines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines.core"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines.android"
+
+    implementation project(':flowbindings-core')
+
+
+}

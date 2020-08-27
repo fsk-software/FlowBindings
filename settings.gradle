@@ -1,0 +1,3 @@
+include ':flowbindings-core'
+include ':app'
+rootProject.name = "FlowBindings"

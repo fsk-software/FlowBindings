@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">FlowBindings</string>
+
+    <string name="view_clicks_title">View Clicks</string>
+    <string name="focus_changed_title">Focus Changed</string>
+    <string name="scroll_listener_title">Scrolling</string>
+    <string name="key_press_title">Key Presses</string>
+    <string name="toolbar_title">Toolbar</string>
+    <string name="compound_button_title">Check Changed</string>
+    <string name="text_changes_title">Text Changes</string>
+
+
+    <string name="button_click_counts">Click Count: %1$d</string>
+    <string name="button_long_click_counts">Long Click Count: %1$d</string>
+    <string name="click_me">Click Me!</string>
+    <string name="long_click_me">Long Click Me!</string>
+
+
+    <string name="tap_to_focus">Tap To Focus</string>
+    <string name="focused">Focused</string>
+
+    <string name="scroll_log_entry">Scroll: from[%1$d,%2$d] to[%3$d,%4$d]%5$s%6$s</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, qui ex dicant dolore lucilius,
+        vis simul maiorum cu, decore euismod scribentur has id. Ius id mutat assueverit complectitur.
+        Agam ullamcorper id quo. Utinam antiopam in eam. Tollit nemore alterum nam ad, cu mel falli
+        intellegat, no pri cibo nonumy timeam.
+        \n\n
+        Has viris dicant labitur at, elitr vidisse aperiri vix eu. Sea te nulla maluisset.
+        Pri invidunt conceptam ei, adhuc aliquid his cu. Eos vituperata honestatis eu,
+        at cum scriptorem neglegentur. No nec impetus comprehensam,
+        no ornatus petentium complectitur vim, justo nulla sea ex.
+        \n\n
+        Impetus suavitate te pro, eu cum detracto sapientem gloriatur, ei prima facer albucius eos.
+        Duo no invidunt iracundia, vix suas ludus cu, dolore convenire ei ius.
+        At dicunt vocent cum, eam ad fugit inani fierent. Simul accusata cu mel. Doming civibus at per,
+        te eum aperiri accusam, ut illud molestiae nec.
+        \n\n
+        Nec corpora cotidieque an, stet nonumy possit te vim, denique fastidii menandri ne sed.
+        Et probo clita detracto qui, nam quis timeam percipit an. Eum ei possim audire sapientem.
+        Vocibus posidonium usu an, per id blandit evertitur, in oportere molestiae eos.
+        \n\n
+        Primis fuisset id has, vix oporteat facilisi in, te quo mediocrem percipitur.
+        Qui no atqui dicta moderatius. Usu ei fierent insolens, sea ea purto equidem menandri.
+        Mel ne sensibus gubergren omittantur.
+        \n\n
+        Lorem ipsum dolor sit amet, qui ex dicant dolore lucilius,
+        vis simul maiorum cu, decore euismod scribentur has id. Ius id mutat assueverit complectitur.
+        Agam ullamcorper id quo. Utinam antiopam in eam. Tollit nemore alterum nam ad, cu mel falli
+        intellegat, no pri cibo nonumy timeam.
+        \n\n
+        Has viris dicant labitur at, elitr vidisse aperiri vix eu. Sea te nulla maluisset.
+        Pri invidunt conceptam ei, adhuc aliquid his cu. Eos vituperata honestatis eu,
+        at cum scriptorem neglegentur. No nec impetus comprehensam,
+        no ornatus petentium complectitur vim, justo nulla sea ex.
+        \n\n
+        Impetus suavitate te pro, eu cum detracto sapientem gloriatur, ei prima facer albucius eos.
+        Duo no invidunt iracundia, vix suas ludus cu, dolore convenire ei ius.
+        At dicunt vocent cum, eam ad fugit inani fierent. Simul accusata cu mel. Doming civibus at per,
+        te eum aperiri accusam, ut illud molestiae nec.
+        \n\n
+        Nec corpora cotidieque an, stet nonumy possit te vim, denique fastidii menandri ne sed.
+        Et probo clita detracto qui, nam quis timeam percipit an. Eum ei possim audire sapientem.
+        Vocibus posidonium usu an, per id blandit evertitur, in oportere molestiae eos.
+        \n\n
+        Primis fuisset id has, vix oporteat facilisi in, te quo mediocrem percipitur.
+        Qui no atqui dicta moderatius. Usu ei fierent insolens, sea ea purto equidem menandri.
+        Mel ne sensibus gubergren omittantur.
+    </string>
+</resources>

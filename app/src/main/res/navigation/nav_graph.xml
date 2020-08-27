@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sampleSelectionFragment">
+
+    <fragment
+        android:id="@+id/sampleSelectionFragment"
+        android:name="fsk.com.flowbindings.app.selection.SampleSelectionFragment" />
+
+
+    <fragment
+        android:id="@+id/viewClicksSampleFragment"
+        android:name="fsk.com.flowbindings.app.ViewClicksSampleFragment" />
+
+
+    <fragment
+        android:id="@+id/focusChangedSampleFragment"
+        android:name="fsk.com.flowbindings.app.FocusChangedSampleFragment" />
+
+    <fragment
+        android:id="@+id/scrollingSampleFragment"
+        android:name="fsk.com.flowbindings.app.ScrollingSampleFragment" />
+
+</navigation>
