@@ -4,7 +4,6 @@
     <string name="view_clicks_title">View Clicks</string>
     <string name="focus_changed_title">Focus Changed</string>
     <string name="scroll_listener_title">Scrolling</string>
-    <string name="key_press_title">Key Presses</string>
     <string name="toolbar_title">Toolbar</string>
     <string name="compound_button_title">Check Changed</string>
     <string name="text_changes_title">Text Changes</string>
@@ -20,6 +19,12 @@
     <string name="focused">Focused</string>
 
     <string name="scroll_log_entry">Scroll: from[%1$d,%2$d] to[%3$d,%4$d]%5$s%6$s</string>
+
+    <string name="clear">clear</string>
+
+    <string name="show_image">Show Image</string>
+    <string name="hide_image">Hide Image</string>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, qui ex dicant dolore lucilius,

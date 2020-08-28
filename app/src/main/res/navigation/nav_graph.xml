@@ -8,11 +8,9 @@
         android:id="@+id/sampleSelectionFragment"
         android:name="fsk.com.flowbindings.app.selection.SampleSelectionFragment" />
 
-
     <fragment
         android:id="@+id/viewClicksSampleFragment"
         android:name="fsk.com.flowbindings.app.ViewClicksSampleFragment" />
-
 
     <fragment
         android:id="@+id/focusChangedSampleFragment"
@@ -21,5 +19,13 @@
     <fragment
         android:id="@+id/scrollingSampleFragment"
         android:name="fsk.com.flowbindings.app.ScrollingSampleFragment" />
+
+    <fragment
+        android:id="@+id/toolbarSampleFragment"
+        android:name="fsk.com.flowbindings.app.ToolbarSampleFragment" />
+
+    <fragment
+        android:id="@+id/compoundButtonSampleFragment"
+        android:name="fsk.com.flowbindings.app.selection.CompoundButtonSampleFragment" />
 
 </navigation>

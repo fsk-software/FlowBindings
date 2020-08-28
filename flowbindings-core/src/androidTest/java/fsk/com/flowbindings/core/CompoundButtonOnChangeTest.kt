@@ -22,10 +22,7 @@ class CompoundButtonOnChangeTest {
 
         runBlockingTest {
             view.onCheckedChanged().test(this) {
-                assertValues(
-                    OnCheckedChangedEvent(view, true),
-                    OnCheckedChangedEvent(view, false)
-                )
+                assertValues(true, false)
             }.invokeOnCompletion {
                 //fire the checked listener one more time to verify the listener was released.
                 view.isChecked = true

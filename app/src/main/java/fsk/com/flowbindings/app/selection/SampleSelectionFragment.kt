@@ -29,20 +29,20 @@ class SampleSelectionFragment : Fragment(R.layout.fragment_sample_selection) {
 
     private fun navigateToSample(sample: Sample) {
         when (sample) {
-            Sample.COMPOUND_BUTTON -> {
-            }
+            Sample.COMPOUND_BUTTON ->
+                findNavController().navigate(R.id.compoundButtonSampleFragment)
+
             Sample.FOCUS_CHANGE ->
                 findNavController().navigate(R.id.focusChangedSampleFragment)
 
-            Sample.KEY_PRESS -> {
-            }
             Sample.SCROLL_LISTENER ->
                 findNavController().navigate(R.id.scrollingSampleFragment)
 
             Sample.TEXT_CHANGES -> {
             }
-            Sample.TOOLBAR -> {
-            }
+            Sample.TOOLBAR ->
+                findNavController().navigate(R.id.toolbarSampleFragment)
+
             Sample.VIEW_CLICKS_AND_FOCUS_CHANGE ->
                 findNavController().navigate(R.id.viewClicksSampleFragment)
         }

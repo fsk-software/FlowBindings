@@ -12,23 +12,11 @@ import kotlinx.coroutines.flow.callbackFlow
  * @return a flow for check changed events.
  */
 @ExperimentalCoroutinesApi
-fun CompoundButton.onCheckedChanged(): Flow<OnCheckedChangedEvent> = callbackFlow {
+fun CompoundButton.onCheckedChanged(): Flow<Boolean> = callbackFlow {
 
     this@onCheckedChanged.setOnCheckedChangeListener { compoundButton, b ->
-        offer(OnCheckedChangedEvent(compoundButton, b))
+        offer(b)
     }
 
     awaitClose { this@onCheckedChanged.setOnCheckedChangeListener(null) }
 }
-
-
-/**
- * Event for the check changed
- *
- * @property button the button triggering the event
- * @property isChecked true if the button is checked.
- */
-data class OnCheckedChangedEvent(
-    val button: CompoundButton,
-    val isChecked: Boolean
-)
