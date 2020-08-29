@@ -1,5 +1,5 @@
 # FlowBindings
-Bindings to Android UI elements using Kotlin Flows.  The listeners automatically remove when the coroutine scope expires.
+Bindings to Android UI elements using Kotlin Flows.  The listeners automatically remove when the coroutine scope expires.  This is inspired by [`RxBinding`](https://github.com/JakeWharton/RxBinding).
 
 [![](https://jitpack.io/v/fsk-software/FlowBindings.svg)](https://jitpack.io/#fsk-software/FlowBindings)
 
