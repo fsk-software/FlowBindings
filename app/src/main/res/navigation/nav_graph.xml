@@ -6,30 +6,30 @@
 
     <fragment
         android:id="@+id/sampleSelectionFragment"
-        android:name="fsk.com.flowbindings.app.selection.SampleSelectionFragment" />
+        android:name="com.fsk.flowbindings.app.selection.SampleSelectionFragment" />
 
     <fragment
         android:id="@+id/viewClicksSampleFragment"
-        android:name="fsk.com.flowbindings.app.ViewClicksSampleFragment" />
+        android:name="com.fsk.flowbindings.app.ViewClicksSampleFragment" />
 
     <fragment
         android:id="@+id/focusChangedSampleFragment"
-        android:name="fsk.com.flowbindings.app.FocusChangedSampleFragment" />
+        android:name="com.fsk.flowbindings.app.FocusChangedSampleFragment" />
 
     <fragment
         android:id="@+id/scrollingSampleFragment"
-        android:name="fsk.com.flowbindings.app.ScrollingSampleFragment" />
+        android:name="com.fsk.flowbindings.app.ScrollingSampleFragment" />
 
     <fragment
         android:id="@+id/toolbarSampleFragment"
-        android:name="fsk.com.flowbindings.app.ToolbarSampleFragment" />
+        android:name="com.fsk.flowbindings.app.ToolbarSampleFragment" />
 
     <fragment
         android:id="@+id/compoundButtonSampleFragment"
-        android:name="fsk.com.flowbindings.app.selection.CompoundButtonSampleFragment" />
+        android:name="com.fsk.flowbindings.app.selection.CompoundButtonSampleFragment" />
 
     <fragment
         android:id="@+id/textMonitoringSampleFragment"
-        android:name="fsk.com.flowbindings.app.TextMonitoringSampleFragment" />
+        android:name="com.fsk.flowbindings.app.TextMonitoringSampleFragment" />
 
 </navigation>

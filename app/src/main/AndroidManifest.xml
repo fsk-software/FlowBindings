@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fsk.com.flowbindings.app">
+    package="com.fsk.flowbindings.app">
 
     <application
         android:allowBackup="true"
