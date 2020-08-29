@@ -22,7 +22,7 @@ class TextViewBeforeTextChangeTest {
         val text2 = "goodbye cruel world"
 
         runBlockingTest {
-            view.beforeTextChanged().test(this) {
+            view.beforeTextChanges().test(this) {
                 assertValues(
                     BeforeTextChangedEvent(
                         view,

@@ -14,9 +14,9 @@ import kotlinx.coroutines.flow.callbackFlow
  * @return a flow for the editor action events.
  */
 @ExperimentalCoroutinesApi
-fun TextView.editorEvents(callback: (Int) -> Boolean = { true }): Flow<EditorActionEvent> =
+fun TextView.editorActions(callback: (Int) -> Boolean = { true }): Flow<EditorActionEvent> =
     callbackFlow {
-        this@editorEvents.setOnEditorActionListener { textView, i, keyEvent ->
+        this@editorActions.setOnEditorActionListener { textView, i, keyEvent ->
             if (callback(i)) {
                 offer(EditorActionEvent(textView, i, keyEvent))
                 true
@@ -25,7 +25,7 @@ fun TextView.editorEvents(callback: (Int) -> Boolean = { true }): Flow<EditorAct
             }
         }
 
-        awaitClose { this@editorEvents.setOnEditorActionListener(null) }
+        awaitClose { this@editorActions.setOnEditorActionListener(null) }
     }
 
 /**

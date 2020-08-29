@@ -15,14 +15,14 @@ import kotlinx.coroutines.flow.callbackFlow
  * @return a flow for the after text changed event.
  */
 @ExperimentalCoroutinesApi
-fun TextView.afterTextChanged(): Flow<AfterTextChangedEvent> = callbackFlow {
+fun TextView.afterTextChanges(): Flow<AfterTextChangedEvent> = callbackFlow {
     val watcher = AfterTextWatcher(
-        this@afterTextChanged,
+        this@afterTextChanges,
         this
     )
 
-    this@afterTextChanged.addTextChangedListener(watcher)
-    awaitClose { this@afterTextChanged.removeTextChangedListener(watcher) }
+    this@afterTextChanges.addTextChangedListener(watcher)
+    awaitClose { this@afterTextChanges.removeTextChangedListener(watcher) }
 }
 
 /**
@@ -41,12 +41,8 @@ private class AfterTextWatcher constructor(
     val view: TextView,
     val producerScope: ProducerScope<AfterTextChangedEvent>
 ) : SimpleTextWatcher() {
+
     override fun afterTextChanged(s: Editable?) {
-        producerScope.offer(
-            AfterTextChangedEvent(
-                view,
-                s
-            )
-        )
+        producerScope.offer(AfterTextChangedEvent(view, s))
     }
 }

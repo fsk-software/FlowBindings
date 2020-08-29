@@ -13,14 +13,14 @@ import kotlinx.coroutines.flow.callbackFlow
  * @return a flow for the before text changed event.
  */
 @ExperimentalCoroutinesApi
-fun TextView.beforeTextChanged(): Flow<BeforeTextChangedEvent> = callbackFlow {
+fun TextView.beforeTextChanges(): Flow<BeforeTextChangedEvent> = callbackFlow {
     val watcher = BeforeTextWatcher(
-        this@beforeTextChanged,
+        this@beforeTextChanges,
         this
     )
 
-    this@beforeTextChanged.addTextChangedListener(watcher)
-    awaitClose { this@beforeTextChanged.removeTextChangedListener(watcher) }
+    this@beforeTextChanges.addTextChangedListener(watcher)
+    awaitClose { this@beforeTextChanges.removeTextChangedListener(watcher) }
 }
 
 /**

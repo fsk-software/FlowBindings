@@ -13,12 +13,12 @@ import kotlinx.coroutines.flow.callbackFlow
  * @return a flow for the on text changed event.
  */
 @ExperimentalCoroutinesApi
-fun TextView.onTextChanged(): Flow<OnTextChangedEvent> = callbackFlow {
+fun TextView.onTextChanges(): Flow<OnTextChangedEvent> = callbackFlow {
     val watcher =
-        OnTextWatcher(this@onTextChanged, this)
+        OnTextWatcher(this@onTextChanges, this)
 
-    this@onTextChanged.addTextChangedListener(watcher)
-    awaitClose { this@onTextChanged.removeTextChangedListener(watcher) }
+    this@onTextChanges.addTextChangedListener(watcher)
+    awaitClose { this@onTextChanges.removeTextChangedListener(watcher) }
 }
 
 /**

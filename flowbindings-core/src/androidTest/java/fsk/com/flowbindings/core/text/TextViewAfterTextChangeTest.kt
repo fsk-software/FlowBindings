@@ -23,7 +23,7 @@ class TextViewAfterTextChangeTest {
         val editable2 = Editable.Factory.getInstance().newEditable("goodbye cruel world")
 
         runBlockingTest {
-            view.afterTextChanged().test(this) {
+            view.afterTextChanges().test(this) {
                 assertValue {
                     it.textView == view && it.editable?.toString() == editable1.toString()
                 }

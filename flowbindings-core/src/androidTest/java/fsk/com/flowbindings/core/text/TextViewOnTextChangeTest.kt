@@ -22,7 +22,7 @@ class TextViewOnTextChangeTest {
         val text2 = "goodbye cruel world"
 
         runBlockingTest {
-            view.onTextChanged().test(this) {
+            view.onTextChanges().test(this) {
                 assertValue {
                     it.textView == view &&
                             it.text?.toString() == text1 &&

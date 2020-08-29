@@ -25,6 +25,11 @@
     <string name="show_image">Show Image</string>
     <string name="hide_image">Hide Image</string>
 
+    <string name="before_text_change_log_entry">Before Text: %1$s, start:%2$d, count:%3$d, after:%4$d</string>
+    <string name="on_text_change_log_entry">On Text: %1$s, start:%2$d, count:%3$d, before:%4$d</string>
+    <string name="after_text_change_log_enty">After Text: %1$s</string>
+    <string name="editor_actions_log_entry">Editor Action: %1$d, keyEvent: %2$s</string>
+    <string name="enter_any_value">Enter Any Values</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, qui ex dicant dolore lucilius,

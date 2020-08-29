@@ -38,8 +38,9 @@ class SampleSelectionFragment : Fragment(R.layout.fragment_sample_selection) {
             Sample.SCROLL_LISTENER ->
                 findNavController().navigate(R.id.scrollingSampleFragment)
 
-            Sample.TEXT_CHANGES -> {
-            }
+            Sample.TEXT_CHANGES ->
+                findNavController().navigate(R.id.textMonitoringSampleFragment)
+
             Sample.TOOLBAR ->
                 findNavController().navigate(R.id.toolbarSampleFragment)
 

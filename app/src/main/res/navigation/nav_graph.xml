@@ -28,4 +28,8 @@
         android:id="@+id/compoundButtonSampleFragment"
         android:name="fsk.com.flowbindings.app.selection.CompoundButtonSampleFragment" />
 
+    <fragment
+        android:id="@+id/textMonitoringSampleFragment"
+        android:name="fsk.com.flowbindings.app.TextMonitoringSampleFragment" />
+
 </navigation>
