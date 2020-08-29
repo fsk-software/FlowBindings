@@ -7,7 +7,6 @@ To use the library add jitpack to the projects repositories:
  
    ```gradle
    repositories { 
-        jcenter()
         maven { url "https://jitpack.io" }
    }
    ```
@@ -15,7 +14,7 @@ To use the library add jitpack to the projects repositories:
 Then add the following the library to your modules gradle file
    ```
    dependencies {
-         compile 'com.github.jitpack:gradle-simple:1.0.5'
+         implementation 'com.github.fsk-software:FlowBindings:1.0-alpha1'
    }
    ```  
 
@@ -23,7 +22,8 @@ To use the bindings, just call the binding extensions.
     
     button.clicks().onEach {
        //respond to each click
-    }.flowOn(Dispatchers.Main).launchIn(lifecycleScope)
+    }.flowOn(Dispatchers.Main)
+     .launchIn(lifecycleScope)
 
 
 
