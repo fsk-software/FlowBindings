@@ -29,7 +29,7 @@ To use the bindings, just call the binding extensions.
 
 License
 =======
-    Copyright 2020 N. Lipelt
+    Copyright 2020 FSK Consulting, Inc
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
